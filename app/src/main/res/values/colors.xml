@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colormainn">#06b2b8</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="yellow">#fce71b</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="divider_color">#1f9b9a9a</color>
+
+    <color name="grey">#DEE1E3</color>
+
+    <color name="colormain">#02BDC7</color>
+    <color name="pink">#FC4076</color>
+    <color name="blue">#02BDC7</color>
+    <color name="orange">#FFB600</color>
+
+    <!-- My Common Colors -->
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="green">#00ab03</color>
+    <color name="gray">#c7c7c7</color>
+    <color name="dark_gray">#9b9a9a</color>
+    <color name="blue_link">#257df1</color>
+    /* RecordAudioDialogFragment */
+    <color name="fab_record_red">#FD4747</color>
+    <color name="fab_accept_green">#4BAE4F</color>
+    <color name="primary">#FF9800</color>
+    <color name="swipe_refresh_red">#e53935</color>
+    <color name="swipe_refresh_green">#7cb342</color>
+    <color name="gray_900">#212121</color>
+    <color name="category_personal">#C8E800</color>
+    <color name="editTextBG">#DADADA</color>
+
+
+    <!-- Slider Screens background -->
+    <color name="bg_screen1">#ffffff</color>
+    <color name="bg_screen2">#ffffff</color>
+    <color name="bg_screen3">#ffffff</color>
+
+    <!-- Slider Screens dots active colors -->
+    <color name="dot_active">#000000</color>
+    <!-- Slider Screens dots in-active colors -->
+    <color name="dot_inactive">#aaa</color>
+    <color name="colorTextPrimary">#FFFFFF</color>
+    <color name="colorTextDisable">#66FFFFFF</color>
+
+
+    <color name="grey_900">#212121</color>
+    <color name="grey_800">#212121</color>
+    <color name="grey_700">#616161</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_500">#9E9E9E</color>
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_400">#BDBDBD</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="grey_100">#F5F5F5</color>
+
+</resources>

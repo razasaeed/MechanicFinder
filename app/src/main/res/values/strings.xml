@@ -1,0 +1,240 @@
+<resources>
+    <string name="app_name">fyp</string>
+
+    <string name="title_activity_maps">Map</string>
+
+    <string name="drawer_open" />
+    <string name="drawer_close" />
+
+    <string name="google_direction_api">AIzaSyB2re7cODKfF3oTwDYqRgcKwEppYPNUStk</string>
+
+    <string name="label_owner">owner</string>
+    <string name="valid_thru">valid thru</string>
+    <string name="text_size_home_search" translatable="false">15</string>
+    <string name="home_search_hint"><font size="10">Where do you want to search?</font></string>
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="menu_activity_task_subtitle_attachments">Attachments</string>
+    <string name="transition_task_list_category" translatable="false">category</string>
+    <string name="transition_task_list_description" translatable="false">description</string>
+    <string name="transition_task_list_title" translatable="false">title</string>
+    <string name="empty_user_data_msg">No data found.</string>
+    <string name="login_label">Login</string>
+    <string name="logout_label">Logout</string>
+    <string name="privacy_label">Privacy &amp; Terms</string>
+    <string name="logout_des">Logout or switch account</string>
+    <string name="privacy_des">Read more about our privacy and terms</string>
+    <string name="email_label">Email</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- place screen-->
+    <string name="cd_fab_fav">Favorite</string>
+    <string name="title_icon_url">Website</string>
+    <string name="title_directions">Directions</string>
+    <string name="title_call">Call</string>
+    <string name="place_desc"> </string>
+    <string name="intent_desc_link">Complete action using</string>
+    <string name="intent_desc_share">Share via</string>
+    <string name="title_reviews">Top reviews</string>
+
+    <!--Drawer items-->
+    <string name="title_feedback">Feedback on ProTrip</string>
+    <string name="email_admin">thesabareesh@gmail.com</string>
+    <string name="share_app_desc">An easy way to discover new places to visit. Travel like a Pro! #ProTrip https://play.google.com/store/apps/details?id=me.sabareesh.trippie </string>
+    <string name="desc_app_version">App version :&#160;</string>
+    <string name="desc_device_info">Device info :&#160;</string>
+    <string name="title_titlebar_info">Info</string>
+    <string name="title_titlebar_privacy_policy">Privacy Policy</string>
+    <string name="title_titlebar_favorites">Favorite places</string>
+    <string name="site_admin">http://www.sabareesh.me</string>
+    <string name="site_privacy_policy">http://sabareesh.me/apps/protrip/privacypolicy.htm</string>
+    <string name="cd_user_avatar">User Display picture</string>
+    <string name="drawer_user_title">Sign In</string>
+
+    <!--<string-array name="cities_of_PaKistan">-->
+    <!--<item>Karachi</item>-->
+    <!--<item>Lahore </item>-->
+    <!--<item>Faisalābād</item>-->
+    <!--<item>Serai</item>-->
+    <!--<item>Rāwalpindi</item>-->
+    <!--<item>Multān</item>-->
+    <!--<item>Gujrānwāla</item>-->
+    <!--<item>Hyderābād City</item>-->
+    <!--<item>Peshāwar</item>-->
+    <!--<item>Abbottābād</item>-->
+    <!--<item>Islamabad</item>-->
+    <!--<item>Quetta</item>-->
+    <!--<item>Bannu</item>-->
+    <!--<item>Bahāwalpur</item>-->
+    <!--<item>Sargodha</item>-->
+    <!--<item>Siālkot City</item>-->
+    <!--<item>Sukkur</item>-->
+    <!--<item>Lārkāna</item>-->
+    <!--<item>Sheikhupura</item>-->
+    <!--<item>Mīrpur Khās</item>-->
+    <!--<item>Rahīmyār Khān</item>-->
+    <!--<item>Kohāt</item>-->
+    <!--<item>Jhang Sadr</item>-->
+    <!--<item>Gujrāt</item>-->
+    <!--<item>Bardār</item>-->
+    <!--<item>Kasūr</item>-->
+    <!--<item>Dera Ghāzi Khān</item>-->
+    <!--<item>Masīwāla</item>-->
+    <!--<item>Nawābshāh</item>-->
+    <!--<item>Okāra</item>-->
+    <!--<item>Gilgit</item>-->
+    <!--<item>Chiniot</item>-->
+    <!--<item>Sādiqābād</item>-->
+    <!--<item>Turbat</item>-->
+    <!--<item>Dera Ismāīl Khān</item>-->
+    <!--<item>Chaman</item>-->
+    <!--<item>Zhob</item>-->
+    <!--<item>Mehra</item>-->
+    <!--<item>Parachinār</item>-->
+    <!--<item>Gwādar</item>-->
+    <!--<item>Kundiān</item>-->
+    <!--<item>Shahdād Kot</item>-->
+    <!--<item>Harīpur</item>-->
+    <!--<item>Matiāri</item>-->
+    <!--<item>Dera Allāhyār</item>-->
+    <!--<item>Lodhrān</item>-->
+    <!--<item>Batgrām</item>-->
+    <!--<item>Thatta</item>-->
+    <!--<item>Bāgh</item>-->
+    <!--<item>Badīn</item>-->
+    <!--<item>Mānsehra</item>-->
+    <!--<item>Ziārat</item>-->
+    <!--<item>Muzaffargarh</item>-->
+    <!--<item>Tando Allāhyār</item>-->
+    <!--<item>Dera Murād Jamāli</item>-->
+    <!--<item>Karak</item>-->
+    <!--<item>Mardan</item>-->
+    <!--<item>Uthal</item>-->
+    <!--<item>Nankāna Sāhib</item>-->
+    <!--<item>Bārkhān</item>-->
+    <!--<item>Hāfizābād</item>-->
+    <!--<item>Kotli</item>-->
+    <!--<item>Loralai</item>-->
+    <!--<item>Dera Bugti</item>-->
+    <!--<item>Jhang City</item>-->
+    <!--<item>Sāhīwāl</item>-->
+    <!--<item>Sāngharv</item>-->
+    <!--<item>Pākpattan</item>-->
+    <!--<item>Chakwāl</item>-->
+    <!--<item>Khushāb</item>-->
+    <!--<item>Ghotki</item>-->
+    <!--<item>Kohlu</item>-->
+    <!--<item>Khuzdār</item>-->
+    <!--<item>Awārān</item>-->
+    <!--<item>Nowshera</item>-->
+    <!--<item>Chārsadda</item>-->
+    <!--<item>Qila Abdullāh</item>-->
+    <!--<item>Bahāwalnagar</item>-->
+    <!--<item>Dādu</item>-->
+    <!--<item>Alīābad</item>-->
+    <!--<item>Lakki Marwat</item>-->
+    <!--<item>Chilās</item>-->
+    <!--<item>Pishin</item>-->
+    <!--<item>Tānk</item>-->
+    <!--<item>Chitrāl</item>-->
+    <!--<item>Qila Saifullāh</item>-->
+    <!--<item>Shikārpur</item>-->
+    <!--<item>Panjgūr</item>-->
+    <!--<item>Mastung</item>-->
+    <!--<item>Kalāt</item>-->
+    <!--<item>Gandāvā</item>-->
+    <!--<item>Khānewāl</item>-->
+    <!--<item>Nārowāl</item>-->
+    <!--<item>Khairpur</item>-->
+    <!--<item>Malakand</item>-->
+    <!--<item>Vihāri</item>-->
+    <!--<item>Saidu Sharif</item>-->
+    <!--<item>Jhelum</item>-->
+    <!--<item>Mandi Bahāuddīn</item>-->
+    <!--<item>Bhakkar</item>-->
+    <!--<item>Toba Tek Singh</item>-->
+    <!--<item>Jāmshoro</item>-->
+    <!--<item>Khārān</item>-->
+    <!--<item>Umarkot</item>-->
+    <!--<item>Hangu</item>-->
+    <!--<item>Timargara</item>-->
+    <!--<item>Gākuch</item>-->
+    <!--<item>Jacobābād</item>-->
+    <!--<item>Miānwāli</item>-->
+    <!--<item>Alpūrai</item>-->
+    <!--<item>Mūsa Khel Bāzār</item>-->
+    <!--<item>Naushahro Fīroz</item>-->
+    <!--<item>New Mīrpur</item>-->
+    <!--<item>Daggar</item>-->
+    <!--<item>Eidgāh</item>-->
+    <!--<item>Sibi</item>-->
+    <!--<item>Dālbandīn</item>-->
+    <!--<item>Rājanpur</item>-->
+    <!--<item>Leiah</item>-->
+    <!--<item>Upper Dir</item>-->
+    <!--<item>Tando Muhammad Khān</item>-->
+    <!--<item>Attock City</item>-->
+    <!--<item>Rāwala Kot</item>-->
+    <!--<item>Swābi</item>-->
+    <!--<item>Kandhkot</item>-->
+    <!--<item>Dasu</item>-->
+    <!--<item>Athmuqam</item>-->
+    <!--</string-array>-->
+
+    <string-array name="vehicle_type">
+        <item>Car </item>
+        <item>Bus, Van, Truck</item>
+        <item>Rickshaw, Chingchi</item>
+        <item>Tractors, Trailers</item>
+        <item>Motor Cycle</item>
+        <item>Bicycle</item>
+        <item>Scooters</item>
+        <item>Other Vehicle</item>
+    </string-array>
+
+    <string-array name="Service_name">
+        <item>FIXED PRICE SERVICING</item>
+        <item>ELECTRONIC TUNING</item>
+        <item>EFI SERVICE AND REPAIRS</item>
+        <item>FUEL INJECTION CLEANING</item>
+        <item>BRAKE, CLUTCH REPLACEMENT, REPAIRS</item>
+        <item>COMPUTERISED DIAGNOSTICS</item>
+        <item>AIRCONDITIONING REGAS AND REPAIR</item>
+        <item>DISC MACHINING</item>
+        <item>AUTOMATIC TRANSMISSION AND MANUAL TRANSMISSION SERVICING</item>
+        <item>WINDSCREEN REPLACEMENTS</item>
+        <item>TYRE FITTING</item>
+        <item>WHEEL ALIGNMENTS</item>
+        <item>WHEEL BALANCING</item>
+        <item>DEALER LOGBOOK SERVICES</item>
+        <item>PRE PURCHASE INSPECTIONS</item>
+        <item>AUTHORISED ROAD WORTHY TESTER</item>
+        <item>CAR BATTERY REPLACEMENT</item>
+        <item>AUTO ELECTRICAL SERVICES</item>
+        <item>ROADWORTHY CERTIFICATE INSPECTIONS</item>
+        <item>LPG SERVICING</item>
+    </string-array>
+    <string name="title_activity_user__maps">Map</string>
+
+    <string-array name="vehicle_listview">
+        <item>Cars</item>
+        <item>Buses, Vans and Trucks</item>
+        <item>Tractors and Trailers</item>
+        <item>Rickshaw and Chingchi</item>
+        <item>Motorcycles and  Scooters</item>
+        <item>Other Vehicles</item>
+        <item>Cars Accessories</item>
+        <item>Spare Parts</item>
+    </string-array>
+
+    <string-array name="myacc_listview">
+        <item>Edit Profile</item>
+        <item>Notifications</item>
+        <item>My Ads</item>
+        <item>Payment</item>
+
+    </string-array>
+
+</resources>

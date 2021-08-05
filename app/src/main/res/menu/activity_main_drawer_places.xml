@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <group
+            android:id="@+id/account_pages">
+            <item
+                android:id="@+id/nav_favorites"
+                android:title="favourite"
+                android:visible="false" />
+        </group>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_requests"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="My Requests" />
+        <item
+            android:id="@+id/nav_mech_list"
+            android:icon="@drawable/ic_clear_black_24dp"
+            android:title="Mechanics List" />
+
+        <group
+            android:id="@+id/account_group"
+            android:checkableBehavior="none">
+            <item
+                android:id="@+id/nav_signout"
+                android:title="logout"
+                android:visible="false" />
+        </group>
+
+
+    </group>
+
+</menu>

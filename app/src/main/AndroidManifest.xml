@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="motor.mechanic.finder.fyp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app_3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app_3"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2"
+        tools:replace="android:icon"
+        android:usesCleartextTraffic="true">
+
+        <service android:name=".FirebaseServices.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseServices.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".UI.MyEmployees"/>
+
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChoiceActivity"
+            android:theme="@style/AppTheme2">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC4qZqhC02THhGhER4D3aCBGbYgEkN3Bus" />
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="@string/google_maps_key_user" /> -->
+
+        <activity android:name=".UI.WorkshopChoiceActivity" />
+        <activity android:name=".UI.Workshop_Login" />
+        <activity android:name=".User_Signup" />
+        <activity android:name=".settings.SettingFragment" />
+        <activity android:name=".Mechanic_Signup" />
+        <activity android:name=".PhoneNo_Verification" />
+        <activity android:name=".Mechanic_Requests" />
+        <activity android:name=".Mechanic_Login" />
+        <activity android:name=".Mech_PersonalInfo" />
+        <activity android:name=".UI.SubServiceDetail_UI" />
+        <activity android:name=".Mech_WorkshopInfo" />
+        <activity
+            android:name=".Mech_WorkersInfo"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".Mech_ServicesDetails" />
+        <activity android:name=".User_Option" />
+        <activity android:name=".User_Name" />
+        <activity android:name=".Mech_WorkshopImages" />
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Worker_Detail" />
+        <activity android:name=".Worker_Upload" />
+        <activity android:name=".Service_Detail" />
+        <activity android:name=".UI.My_Requests" />
+        <activity android:name=".Service_Upload" />
+        <activity android:name=".User_Password" />
+        <activity android:name=".UI.Workshop_Requests" />
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".ResetPassword" />
+        <activity
+            android:name=".User_MapsActivity"
+            android:label="@string/title_activity_user__maps" />
+        <activity android:name=".UI.Book_UI" />
+        <activity android:name=".UI.SelectService_UI" />
+        <activity android:name=".UI.NearestMechanicsList" />
+        <activity android:name=".UI.UserLogin_UI" />
+        <activity android:name=".UI.MechanicDetails" />
+        <activity android:name=".UI.ServiceDetail_UI" />
+        <activity android:name=".UI.InsertNewProduct_UI"></activity>
+        <activity android:name=".UI.NearestMechanicsMap"></activity>
+        <activity android:name=".UI.WorkshopRegistration"></activity>
+        <activity android:name=".UI.WorkshopImages"></activity>
+    </application>
+
+</manifest>

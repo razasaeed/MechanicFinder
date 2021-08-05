@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/account"
+        android:title="My Account"
+        android:visible="true"
+        android:icon="@drawable/ic_account_box_black_24dp">
+
+    </item>
+    <item
+        android:id="@+id/page2"
+        android:visible="true">
+
+    </item>
+
+    <item
+        android:id="@+id/Settings"
+        android:title="Settings"
+        android:visible="true"
+        android:icon="@drawable/ic_settings_black_24dp">
+
+    </item>
+
+</menu>

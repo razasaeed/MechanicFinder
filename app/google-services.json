@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1081783562039",
+    "project_id": "motormechanicfinder",
+    "storage_bucket": "motormechanicfinder.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081783562039:android:df91d7d2c29f6b76fa34b2",
+        "android_client_info": {
+          "package_name": "motor.mechanic.finder.fyp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081783562039-kbun475ftdjb7tj3cl6h1mpmjo9o1hiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "motor.mechanic.finder.fyp",
+            "certificate_hash": "870d60f5f8b7879728fcc5bef8e6e5e30ece0497"
+          }
+        },
+        {
+          "client_id": "1081783562039-2e848pi3tgk3t0se99rsvar1mactj47m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK9INYogkG0mpilPhBudCfZ-Wsz7QXsss"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081783562039-2e848pi3tgk3t0se99rsvar1mactj47m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

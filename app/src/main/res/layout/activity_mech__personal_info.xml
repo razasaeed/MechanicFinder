@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mech_PersonalInfo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_navigate_before_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvPersonal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:text="Owner personal Information"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/owner_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="119dp"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/orange"
+                app:civ_border_width="2dp"
+                app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tvname"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="-270dp"
+                android:gravity="center"
+                android:text="Upload Photo"
+                android:textColor="@color/orange"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="300dp"
+                android:text="YOUR NAME"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="330dp"
+                android:background="@drawable/et_round"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+
+            <TextView
+                android:id="@+id/tvCNIC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="390dp"
+                android:text="YOUR CNIC"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="420dp"
+                android:background="@drawable/et_round"
+                android:hint="CNIC"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="480dp"
+                android:text="YOUR PHONE NUMBER"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="510dp"
+                android:orientation="horizontal">
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_defaultNameCode="PK">
+
+                </com.hbb20.CountryCodePicker>
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/et_round"
+                    android:ems="15"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvWorkExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="570dp"
+                android:text="YOUR WORK EXPERIENCE"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etWExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="600dp"
+                android:background="@drawable/et_round"
+                android:hint="Work Experience(in yrs.)"
+                android:inputType="number"
+                android:maxLength="8"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tvWorkType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="660dp"
+                android:visibility="gone"
+                android:text="YOUR STATUS"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etWType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="690dp"
+                android:visibility="gone"
+                android:background="@drawable/et_round"
+                android:hint="Select Type"
+                android:focusable="false"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="750dp"
+                android:background="@drawable/btn_round"
+                android:padding="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Continue" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

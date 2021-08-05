@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_task_detail_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_task_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextAppearance="@style/ToolbarTheme.SmallTitleText">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgMechanic"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/default_profile_image"
+                    app:civ_border_color="@color/colorPrimary"
+                    app:civ_border_width="0.10dp" />
+
+                <ImageView
+                    android:id="@+id/onlineIcon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="31dp"
+                    app:srcCompat="@drawable/green_circle" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mechanicNameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muhammad Zeeshan"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mechanicStatusTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="online"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <motor.mechanic.finder.fyp.views.BetterNestedScrollView
+            android:id="@+id/activity_task_detail_scrollview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/activity_task_detail_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Example title of Task"
+                        android:textColor="@color/gray_900"
+                        android:textSize="@dimen/text_size_biggest"
+                        android:transitionName="@string/transition_task_list_title" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_task_detail_contact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="+923165994525"
+                            android:textSize="@dimen/text_size_medium"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                        <ImageView
+                            android:id="@+id/activity_task_detail_category"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_below="@id/activity_task_detail_title"
+                            android:layout_toRightOf="@id/activity_task_detail_contact"
+                            android:src="@drawable/icon_category_personal"
+                            android:transitionName="@string/transition_task_list_category" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_task_detail_done_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/activity_task_detail_contact"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_task_detail_done"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Yesterday, 3rd Feb 2017"
+                            android:textColor="@color/swipe_refresh_green"
+                            android:textSize="@dimen/text_size_medium" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_task_detail_reminder_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lines="1"
+                    android:text="Mechhanic Location"
+                    android:textColor="@color/primary"
+                    android:textSize="@dimen/text_size_small"
+                    android:textStyle="bold" />
+
+                <FrameLayout
+                    android:id="@+id/activity_task_detail_reminder_placeholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="-12dp"
+                    android:layout_marginStart="-12dp"
+                    android:layout_marginTop="4dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/orderDetailLayout"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:lines="1"
+                        android:text="Detail Service Required"
+                        android:textColor="@color/primary"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/activity_task_service_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Oil Change"
+                        android:textSize="@dimen/text_size_medium"
+                        android:transitionName="@string/transition_task_list_description" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/activity_task_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Service"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                        <TextView
+                            android:id="@+id/activity_task_product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="1dp"
+                            android:hint="amount"
+                            android:textSize="@dimen/text_size_medium"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PKR"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Sub service"
+                            android:id="@+id/sub_service"
+                            android:textSize="@dimen/text_size_medium"
+                            android:textStyle="bold"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                        <TextView
+                            android:id="@+id/activity_task_sub_product_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="1dp"
+                            android:hint="amount"
+                            android:textSize="@dimen/text_size_medium"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PKR"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/activity_task_product_quantity"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_weight="1"
+                            android:text="5 pcs"
+                            android:textSize="@dimen/text_size_medium"
+                            android:visibility="gone"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                        <TextView
+                            android:id="@+id/activity_task_total"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="Total: 5000/-"
+                            android:textSize="@dimen/text_size_medium"
+                            android:transitionName="@string/transition_task_list_description" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="96dp"
+                        android:layout_height="2dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/dash" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </motor.mechanic.finder.fyp.views.BetterNestedScrollView>
+
+        <com.github.clans.fab.FloatingActionMenu xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_task_detail_add_attachment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            fab:menu_animationDelayPerItem="30"
+            fab:menu_backgroundColor="@android:color/transparent"
+            fab:menu_buttonSpacing="6dp"
+            fab:menu_colorNormal="@color/primary"
+            fab:menu_colorPressed="@color/primary"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/icon_attachment"
+            fab:menu_showShadow="false">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_task_detail_add_audio_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_audio_fab_mini"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/primary"
+                fab:fab_colorPressed="@color/primary"
+                fab:fab_showShadow="false"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_task_detail_add_image_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_image_fab_mini"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/primary"
+                fab:fab_colorPressed="@color/primary"
+                fab:fab_showShadow="false"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_task_detail_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_link_fab_mini"
+                android:visibility="gone"
+                fab:fab_colorNormal="@color/primary"
+                fab:fab_colorPressed="@color/primary"
+                fab:fab_label="Submit"
+                fab:fab_showShadow="false"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_task_detail_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_text_fab_mini"
+                fab:fab_colorNormal="@color/primary"
+                fab:fab_colorPressed="@color/primary"
+                fab:fab_label="Services"
+                fab:fab_showShadow="false"
+                fab:fab_size="mini" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/activity_task_detail_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_list_fab_mini"
+                android:visibility="gone"
+                fab:fab_label="Book"
+                fab:fab_colorNormal="@color/primary"
+                fab:fab_colorPressed="@color/primary"
+                fab:fab_showShadow="false"
+                fab:fab_size="mini" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

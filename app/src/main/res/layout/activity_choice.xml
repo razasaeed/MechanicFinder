@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChoiceActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:elevation="4dp"
+        android:fitsSystemWindows="true"
+        app:titleTextColor="#000">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WHEELSPLAY"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/mechanic_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_above="@+id/user_cardview"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-247dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/orange">
+
+        <TextView
+            android:id="@+id/mechanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mechanic"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="180dp"
+            android:textColor="@color/colorwhite"
+            android:textColorHighlight="@color/orange"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30dp" />
+
+        <ImageView
+            android:id="@+id/img_mechanic"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/mechanic" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/user_cardview"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/blue"
+        android:layout_height="190dp"
+        android:layout_marginTop="247dp" >
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="25sp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorwhite"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColorHighlight="@color/blue" />
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/user" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/automart_cardview"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/pink"
+        android:layout_marginTop="437dp">
+
+        <TextView
+            android:id="@+id/automart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Mart"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginStart="70dp"
+            android:layout_marginLeft="60dp"
+            android:textColor="@color/colorwhite"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColorHighlight="@color/pink" />
+
+        <ImageView
+            android:id="@+id/img_automart"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/shopping" />
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

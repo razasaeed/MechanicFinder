@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorwhite"
+    tools:context=".Worker_Upload">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.PopupOverlay"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Edit Worker Details"
+        android:fitsSystemWindows="true"
+        app:titleTextColor="#000">
+
+
+        <ImageButton
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top|end"
+            android:backgroundTint="@color/colorwhite"
+            app:srcCompat="@drawable/ic_check_black_36dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/worker_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerCrop"
+                app:civ_border_color="@color/orange"
+                app:civ_border_width="2dp"
+                app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+            <TextView
+                android:id="@+id/tvUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Photo"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:layout_marginTop="5dp"/>
+
+            <EditText
+                android:id="@+id/etWorkerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:ems="15"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/et_round"
+                android:padding="10dp"
+                android:hint="Full Name"
+                android:inputType="text"
+                android:singleLine="true" />
+
+
+            <EditText
+                android:id="@+id/etWorkerCNIC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:ems="15"
+                android:background="@drawable/et_round"
+                android:padding="10dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="CNIC"
+                android:inputType="text"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:orientation="horizontal">
+
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_defaultNameCode="PK">
+
+                </com.hbb20.CountryCodePicker>
+
+                <EditText
+                    android:id="@+id/etPhoneNo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="15"
+                    android:background="@drawable/et_round"
+                    android:padding="10dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etWExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="15"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="@drawable/et_round"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="Work Experience(in years)"
+                android:inputType="number"
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

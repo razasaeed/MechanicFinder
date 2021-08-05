@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="desc_text_size">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="item_task_icon_size">24dp</dimen>
+    <dimen name="text_size_biggest">24sp</dimen>
+
+
+
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <!-- Dimensions for each item inside the recyclerView (packages)-->
+    <dimen name="icon_width">80dp</dimen>
+    <dimen name="icon_height">80dp</dimen>
+    <dimen name="icon_margin">8dp</dimen>
+    <dimen name="package_item_height">100dp</dimen>
+    <dimen name="recycler_title_size">24sp</dimen>
+
+
+    <!-- Dimensions for each item inside the recyclerView (salesrep)-->
+    <dimen name="salesrep_icon_width">30dp</dimen>
+    <dimen name="salesrep_icon_height">30dp</dimen>
+    <dimen name="salesrep_icon_margin">4dp</dimen>
+    <dimen name="salesrep_image_width">96dp</dimen>
+    <dimen name="salesrep_image_height">96dp</dimen>
+    <dimen name="salesrep_image_margin">8dp</dimen>
+
+    <!--About us specific dimensions-->
+    <dimen name="cards_sides_margin">16dp</dimen>
+    <dimen name="cards_top_bottom_margin">8dp</dimen>
+
+    <!-- Some general dimensions-->
+    <dimen name="padding">8dp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="title_size">20sp</dimen>
+    <dimen name="subtitle_size">16sp</dimen>
+    <dimen name="button_text_size">15sp</dimen>
+    <dimen name="display_size">45sp</dimen>
+
+
+    <!--splash screen-->
+    <dimen name="splash_icon_dim">150dp</dimen>
+    <!--drawer dimens-->
+    <dimen name="height_logo_nav">70dp</dimen>
+    <!-- app wide-->
+    <bool name="isTablet">false</bool>
+    <dimen name="pbar_height">20dp</dimen>
+    <dimen name="pbar_margin">-8dp</dimen>
+    <dimen name="card_radius">2dp</dimen>
+    <dimen name="pb_elevation">10dp</dimen>
+    <dimen name="button_elevation">1dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <item name="bodytext_spacing" format="float" type="dimen">1.15</item>
+
+    <!-- home screen-->
+    <dimen name="margin_home_search">2dp</dimen>
+    <dimen name="height_card_current">75dp</dimen>
+
+
+    <!--city screen-->
+    <dimen name="start_margin_collapse">15dp</dimen>
+    <dimen name="height_city_banner">200dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_no_elevation">2dp</dimen>
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="category_cover_height">160dp</dimen>
+    <dimen name="category_title_padding">10dp</dimen>
+    <dimen name="category_title">18dp</dimen>
+
+    <!--places screen-->
+    <dimen name="padding_places_address">5dp</dimen>
+    <dimen name="margin_places_top_ratings">2dp</dimen>
+    <dimen name="margin_places_start_rating">5dp</dimen>
+    <dimen name="padding_places_name">5dp</dimen>
+    <dimen name="dim_places_thumbnail">130dp</dimen>
+
+
+    <!--place screen-->
+    <dimen name="height_top_icons">30dp</dimen>
+    <dimen name="padding_iconbar">10dp</dimen>
+    <dimen name="padding_descbar">15dp</dimen>
+    <dimen name="padding_place_address">5dp</dimen>
+    <dimen name="padding_place_rating">5dp</dimen>
+    <dimen name="margin_place_top_ratings">7dp</dimen>
+    <dimen name="margin_place_start_rating">10dp</dimen>
+    <dimen name="height_reviewer_avatar">50dp</dimen>
+    <dimen name="margin_place_top_review">2dp</dimen>
+    <dimen name="margin_title_right">75dp</dimen>
+
+    <!--favs screen-->
+    <dimen name="height_nofavs_badge">150dp</dimen>
+    <dimen name="margin_top_nofavs_badge">50dp</dimen>
+    <dimen name="height_offline_badge">100dp</dimen>
+    <dimen name="height_retry_badge">50dp</dimen>
+
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+
+    <dimen name="widget_height">250dp</dimen>
+    <dimen name="widget_width">250dp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+    <dimen name="size_widget_title">25sp</dimen>
+
+    <!--Intro swipe dimens-->
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="img_width_height_2x">150dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+</resources>
